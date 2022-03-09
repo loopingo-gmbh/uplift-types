@@ -1,0 +1,12 @@
+{
+    "name": "uplift-types",
+    "version": "0.1.0",
+    "description": "typescript declaration types for the loopingo uplift library",
+    "author": "loopingo GmbH",
+    "license": "ISC",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loopingo-gmbh/uplift-types.git"
+    }
+}
