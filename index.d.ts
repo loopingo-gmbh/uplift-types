@@ -11,6 +11,7 @@ declare namespace loopingo_uplift {
     function maximize()
     function minimize()
     function getConfig() : WidgetConfigService
+    function asd() : Rx.Observable<void>
 }
 
 declare interface WidgetConfigService {
