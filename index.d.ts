@@ -1,19 +1,19 @@
 import {Observable} from 'rxjs'
 
-declare namespace loopingo_uplift {
-    function mount(element: HTMLElement)
-    function unmount()
-    function pushEmailAddress(val: string)
-    function pushCartValue(val: number)
-    function pushBasketItem()
-    function completeTransaction(val: string)
-    function setToken(val: string)
-    function setCampaignId(val: string)
-    function onReady(cb: () => void)
-    function maximize()
-    function minimize()
-    function getConfig() : WidgetConfigService
-    function onOfferSelection() : Observable<void>
+declare interface loopingo_uplift {
+    mount(element: HTMLElement)
+    unmount()
+    pushEmailAddress(val: string)
+    pushCartValue(val: number)
+    pushBasketItem()
+    completeTransaction(val: string)
+    setToken(val: string)
+    setCampaignId(val: string)
+    onReady(cb: () => void)
+    maximize()
+    minimize()
+    getConfig() : WidgetConfigService
+    onOfferSelection() : Observable<void>
 }
 
 declare interface WidgetConfigService {
