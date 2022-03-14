@@ -10,7 +10,7 @@
         "url": "https://github.com/loopingo-gmbh/uplift-types.git"
     },
     "scripts": {},
-    "devDependencies": {
-        "@types/rx": "^4.1.2"
+    "dependencies": {
+        "rxjs": "^7.5.5"
     }
 }

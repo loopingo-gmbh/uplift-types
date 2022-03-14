@@ -1,3 +1,5 @@
+import {Observable} from 'rxjs'
+
 declare namespace loopingo_uplift {
     function mount(element: HTMLElement)
     function unmount()
@@ -11,7 +13,7 @@ declare namespace loopingo_uplift {
     function maximize()
     function minimize()
     function getConfig() : WidgetConfigService
-    function asd() : Rx.Observable<void>
+    function onOfferSelection() : Observable<void>
 }
 
 declare interface WidgetConfigService {
