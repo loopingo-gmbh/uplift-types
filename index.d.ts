@@ -15,7 +15,7 @@ declare interface loopingo_uplift
     minimize() : void
     getConfig(): WidgetConfigService
     campaignRewardSelection$(): Observable<CampaignReward>
-    deselectReward(reward : CampaignReward) : void
+    deselectReward() : void
 }
 
 declare interface CampaignReward
