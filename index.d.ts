@@ -42,6 +42,7 @@ declare interface Offer
     mood_image_link: string
     email_image_link: string
     id: string
+    supplier_domain : string
 }
 
 declare interface VoucherGroup
