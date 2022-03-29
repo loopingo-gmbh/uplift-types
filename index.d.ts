@@ -14,8 +14,9 @@ declare interface loopingo_uplift
     maximize() : void
     minimize() : void
     getConfig(): WidgetConfigService
+    deselectReward() : void    
     campaignRewardSelection$(): Observable<CampaignReward>
-    deselectReward() : void
+    getSelectionProgressState$() : Observable<ProgressState>
 }
 
 declare interface CampaignReward
@@ -63,4 +64,12 @@ declare interface WidgetConfigService
     setSuccessColor(value: string): this
     setActionColor(value: string): this
     setDangerColor(value: string): this
+}
+
+declare interface ProgressState
+{
+    completed : boolean
+    target : number
+    current : number
+    percentage : numer
 }
