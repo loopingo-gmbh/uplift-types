@@ -71,5 +71,5 @@ declare interface ProgressState
     completed : boolean
     target : number
     current : number
-    percentage : numer
+    percentage : number
 }
