@@ -72,4 +72,5 @@ declare interface ProgressState
     target : number
     current : number
     percentage : number
+    missing_amount : number
 }
