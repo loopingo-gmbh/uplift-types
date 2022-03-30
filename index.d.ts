@@ -68,9 +68,9 @@ declare interface WidgetConfigService
 
 declare interface ProgressState
 {
-    completed : boolean
-    target : number
-    current : number
+    is_available : boolean
+    current_cart_value : number
+    target_cart_value : number
     percentage : number
     missing_amount : number
 }
