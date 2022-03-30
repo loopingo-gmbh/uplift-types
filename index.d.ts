@@ -17,7 +17,6 @@ declare interface loopingo_uplift
     deselectReward() : void    
     campaignRewardSelection$(): Observable<CampaignReward>
     getSelectionProgressState$() : Observable<ProgressState>
-    getCartValue$() : Observable<number>
 }
 
 declare interface CampaignReward
