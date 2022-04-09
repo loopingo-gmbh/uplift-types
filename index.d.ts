@@ -11,6 +11,7 @@ declare interface loopingo_uplift
     setToken(val: string) : void
     setCampaignId(val: string) : void
     onReady(cb: () => void) : void
+    registerDisplay() : void    
     maximize() : void
     minimize() : void
     getConfig(): WidgetConfigService
