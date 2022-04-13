@@ -32,15 +32,12 @@ declare interface CampaignReward
 declare interface Offer
 {
     voucher_group: VoucherGroup
-    title: string
     one_liner: string
     description: string
     url: string
     info_1: string
     info_2: string
     info_3: string
-    terms: string
-    terms_extended: string
     logo_image_link: string
     mood_image_link: string
     email_image_link: string
