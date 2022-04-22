@@ -12,13 +12,12 @@ declare interface loopingo_uplift
     setCampaignId(val: string) : void
     onReady(cb: () => void) : void
     registerDisplay() : void    
-    maximize() : void
-    minimize() : void
     getConfig(): WidgetConfigService
     deselectReward() : void    
     campaignRewardSelection$(): Observable<CampaignReward>
     getSelectionProgressState$() : Observable<ProgressState>
     getState() : State
+    selectRewardByPosition(position : number) : void
 }
 
 declare interface State {
