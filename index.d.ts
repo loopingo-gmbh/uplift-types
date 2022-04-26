@@ -18,7 +18,7 @@ declare interface loopingo_uplift
     getConfig(): WidgetConfigService
     getState() : State
     getCampaign() : Campaign
-    hasActiveCampaign() : boolean
+    hasActiveSession() : boolean
 }
 
 declare interface InitializeData {
