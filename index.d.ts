@@ -2,7 +2,7 @@ import {Observable} from 'rxjs'
 
 declare interface loopingo_uplift
 {
-    initialize( data : InitializeData) : void
+    createSession( data : SessionData) : void
     mount(element: HTMLElement) : void
     unmount() : void
     pushEmailAddress(val: string) : void
@@ -21,7 +21,7 @@ declare interface loopingo_uplift
     hasActiveSession() : boolean
 }
 
-declare interface InitializeData {
+declare interface SessionData {
     auth_token : string
     campaign_candidates : CampaignCandidate[]
 }
