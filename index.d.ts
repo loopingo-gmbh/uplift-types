@@ -2,23 +2,27 @@ import {Observable} from 'rxjs'
 
 declare interface loopingo_uplift
 {
+    initialize( data : InitializeData) : void
     mount(element: HTMLElement) : void
     unmount() : void
     pushEmailAddress(val: string) : void
     pushCartValue(val: number) : void
     pushBasketItem() : void
     completeTransaction(val: string) : void
-    setToken(val: string) : void
-    setCampaignId(val: string) : void
     onReady(cb: () => void) : void
-    registerDisplay() : void    
-    getConfig(): WidgetConfigService
-    deselectReward() : void    
-    campaignRewardSelection$(): Observable<CampaignReward>
-    getSelectionProgressState$() : Observable<ProgressState>
-    getState() : State
+    registerDisplay() : void
+    deselectReward() : void
     selectRewardByPosition(position : number) : void
+    rewardSelection$(): Observable<CampaignReward>
+    selectionProgressState$() : Observable<ProgressState>
+    getConfig(): WidgetConfigService
+    getState() : State
     getCampaign() : Campaign
+}
+
+declare interface InitializeData {
+    auth_token : string
+    campaign_id : string
 }
 
 declare interface Campaign {
@@ -26,7 +30,7 @@ declare interface Campaign {
     promo_title: string
     promo_text: string
     rewards: CampaignReward[]
-    is_baseline : boolean   
+    is_baseline : boolean
 }
 
 declare interface State {
