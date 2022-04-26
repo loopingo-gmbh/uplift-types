@@ -23,7 +23,12 @@ declare interface loopingo_uplift
 
 declare interface InitializeData {
     auth_token : string
-    campaign_id : string
+    campaign_candidates : CampaignCandidate[]
+}
+
+declare interface CampaignCandidate {
+    weight : number
+    cmpaign_id : string
 }
 
 declare interface Campaign {
