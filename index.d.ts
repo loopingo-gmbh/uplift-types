@@ -18,6 +18,15 @@ declare interface loopingo_uplift
     getSelectionProgressState$() : Observable<ProgressState>
     getState() : State
     selectRewardByPosition(position : number) : void
+    getCampaign() : Campaign
+}
+
+declare interface Campaign {
+    id: string
+    promo_title: string
+    promo_text: string
+    rewards: CampaignReward[]
+    is_baseline : boolean   
 }
 
 declare interface State {
