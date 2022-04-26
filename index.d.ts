@@ -28,7 +28,7 @@ declare interface InitializeData {
 
 declare interface CampaignCandidate {
     weight : number
-    cmpaign_id : string
+    campaign_id : string
 }
 
 declare interface Campaign {
