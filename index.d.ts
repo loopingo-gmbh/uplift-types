@@ -83,10 +83,12 @@ declare interface WidgetConfigService
     getDangerColor(): string
     getSuccessColor(): string
     getThemeColor(): string
+    getFontSize(): string
     setThemeColor(value: string): this
     setSuccessColor(value: string): this
     setActionColor(value: string): this
     setDangerColor(value: string): this
+    setFontSize(value: string) : this
 }
 
 declare interface ProgressState
