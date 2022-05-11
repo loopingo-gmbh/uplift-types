@@ -12,7 +12,8 @@ declare interface loopingo_uplift
     onReady(cb: () => void) : void
     registerDisplay() : void
     deselectReward() : void
-    selectRewardByPosition(position : number) : void
+    selectReward(reward : CampaignReward) : void
+    activateReward(reward : CampaignReward) : void
     rewardSelection$(): Observable<CampaignReward>
     selectionProgressState$() : Observable<ProgressState>
     getConfig(): WidgetConfigService
