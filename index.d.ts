@@ -11,6 +11,7 @@ declare interface loopingo_uplift
     completeTransaction(val: string) : void
     onReady(cb: () => void) : void
     registerDisplay() : void
+    registerMetaData(meta_data : any) : Promise<Response>
     deselectReward() : void
     selectReward(reward : CampaignReward) : void
     activateReward(reward : CampaignReward) : void
