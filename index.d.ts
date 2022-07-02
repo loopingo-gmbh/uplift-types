@@ -54,6 +54,7 @@ declare interface CampaignReward
     position: number
     id: string
     min_basket: number
+    description : string    
 }
 
 declare interface Offer
