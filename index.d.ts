@@ -21,6 +21,7 @@ declare interface loopingo_uplift
     getState() : State
     getCampaign() : Campaign
     hasActiveSession() : boolean
+    cartValue$() : Observable<number>    
 }
 
 declare interface SessionData {
