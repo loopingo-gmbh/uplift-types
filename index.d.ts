@@ -103,4 +103,5 @@ declare interface ProgressState
     target_cart_value : number
     percentage : number
     missing_amount : number
+    reward : CampaignReward
 }
